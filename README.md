@@ -4,7 +4,8 @@
 1. Clone our edited mycroft-core repo (https://github.com/speydril/mycroft-core)
 2. Run dev-setup.sh in the mycroft-core folder
 3. Clone both this repo and our taskbot-repo (https://github.com/LeonHermann322/taskbot-skill) into '/opt/mycroft/skills'
-4. Run start-mycroft.sh in the mycroft-core folder to start Judgealexa
+4. Extract animal_dataset.zip in the taskbot-folder
+5. Run start-mycroft.sh all in the mycroft-core folder to start Judgealexa
 
 ## About
 
