@@ -8,7 +8,7 @@ import time
 class Judgealexa(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        self.scoreFile = "/home/leonhermann/.config/mycroft/skills/Judgealexa/scoreFile.txt"
+        self.scoreFile = "./scoreFile.txt"
         if not os.path.exists(self.scoreFile):
             self.setScore(1000)
 
