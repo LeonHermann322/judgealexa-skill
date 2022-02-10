@@ -10,7 +10,7 @@ class Judgealexa(MycroftSkill):
         MycroftSkill.__init__(self)
         self.scoreFile = "./scoreFile.txt"
         if not os.path.exists(self.scoreFile):
-            self.log.info("##\t\tscoreFile created")
+            self.log.info("scoreFile created")
             self.setScore(1000)
 
     def getScore(self):
@@ -27,10 +27,10 @@ class Judgealexa(MycroftSkill):
 
     @intent_handler(IntentBuilder('insult').require('Insults'))
     def handle_insult(self, message):
-        self.log.info("##\t\tinsult recognized")
+        self.log.info("insult recognized")
         points = self.getScore()
         points = points - 5
-        self.log.info(f"##\t\tscore: {points + 5} --> {points} ")
+        self.log.info(f"score: {points + 5} --> {points} ")
         self.setScore(points)
         self.speak(f"Are you insulting me?")
 
