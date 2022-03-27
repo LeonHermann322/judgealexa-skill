@@ -1,9 +1,7 @@
 from mycroft import MycroftSkill, intent_handler
 from adapt.intent import IntentBuilder
 
-
 import os
-import time
 
 class Judgealexa(MycroftSkill):
     def __init__(self):
@@ -30,7 +28,7 @@ class Judgealexa(MycroftSkill):
         self.log.info("insult recognized")
         points = self.getScore()
         points = points - 5
-        self.log.info(f"score: {points + 5} --> {points} ")
+        self.log.info(f"updating score : {points + 5} --> {points} ")
         self.setScore(points)
         self.speak(f"Are you insulting me?")
 
